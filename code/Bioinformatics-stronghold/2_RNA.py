@@ -1,4 +1,6 @@
 # rosalind_1_RNA
+#
+# Transcribing DNA into RNA
 # https://rosalind.info/problems/rna/
 #
 # Given: A DNA string t having length at most 1000 nt.
