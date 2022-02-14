@@ -1,6 +1,6 @@
 # rosalind_1_DNA
 #
-#	Counting DNA Nucleotides
+# Counting DNA Nucleotides
 # https://rosalind.info/problems/dna/
 #
 # Given: A DNA string s of length at most 1000 nt.
