@@ -10,3 +10,4 @@ print(s.count('A'), s.count('C'), s.count('G'), s.count('T'))
 # Other's solution
 print(*map(input().count, "ACGT"))
 print(*(s.count(nuc) for nuc in 'ACGT'))
+
