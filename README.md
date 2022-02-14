@@ -1,2 +1,2 @@
 # practice-rosalind
-BI problem practice from https://rosalind.info/
+BI problems from https://rosalind.info/
