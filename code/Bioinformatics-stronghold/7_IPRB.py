@@ -8,7 +8,6 @@
 # Return: The probability that two randomly selected mating organisms will produce an individual possessing a dominant allele 
 # (and thus displaying the dominant phenotype). Assume that any two organisms can mate.
 
-
 if __name__ == "__main__":
 
     with open("./datasets/rosalind_iprb.txt", "r") as inFile:
