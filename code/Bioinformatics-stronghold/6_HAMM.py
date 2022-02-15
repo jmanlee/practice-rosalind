@@ -15,6 +15,7 @@ if __name__ == '__main__':
         #1
         print( sum( 1 for a, b in zip(s,t) if a != b) )
 
-        #2, interable onject에서 False, True의 sum이 계산 가능함.
+        #2. iterable onject에서 False, True의 sum이 계산 가능함.
         print( sum(a != b for a, b in zip(s,t)), file = outFile)
+
 
