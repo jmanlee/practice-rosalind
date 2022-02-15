@@ -29,7 +29,7 @@ if __name__ == "__main__":
             if s[i : i + len(t)] == t:
                 print(f"{i+1}", end=" ", file=outFile)
 
-        # 3 enumerate?
+        # 3 
         for i in range(len(s) - (len(t) - 1)):
             if s[i:].startswith(t):
                 print("{0}".format(i + 1), end=" ")
@@ -40,7 +40,7 @@ if __name__ == "__main__":
             print(i + 1, end=" ")
             i = s.find(t, i + 1)  # start from index i+1
         
-        # 5 using regular expression, 그냥 t, s 만 쓰면 결과값이 다름. overlapping이 안됨.
+        # 5 using regular expression // 그냥 t, s 만 쓰면 결과값이 다름. overlapping이 안됨.
         print([m.start() + 1 for m in re.finditer(t, s)])
         
         # lookahead assertions // ?= // " " 안의 문자열 %s 를 %t로 처리
