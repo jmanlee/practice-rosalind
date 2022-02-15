@@ -11,7 +11,6 @@
 NUC2IDX = {"A": 0, "C": 1, "G": 2, "T": 3}
 IDX2NUC = {0: "A", 1: "C", 2: "G", 3: "T"}
 
-
 def make_profile(seqs):
 
     profile = [[0] * len(seqs[0]) for _ in range(4)]    #dictionary도 가능할 듯
