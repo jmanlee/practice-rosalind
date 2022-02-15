@@ -9,29 +9,30 @@
 
 from collections import Counter
 
-class GC:
 
+class GC:
     def __init__(self, ID):
         self.ID = ID
-        self.DNA = ''
+        self.DNA = ""
         self.GC = None
 
-if __name__ == '__main__':
-    
+  
+if __name__ == "__main__":
+
     fasta_oj = []
 
-    with open('./datasets/rosalind_gc.txt', 'r') as inFile:
+    with open("./datasets/rosalind_gc.txt", "r") as inFile:
         for line in inFile.readlines():
-            if line.startswith('>'): #new string
+            if line.startswith(">"):  # new string
                 fasta_oj.append(GC(line[1:].strip()))
-            else: #sequence 
-                fasta_oj[-1].DNA += line.strip()  #remove \n
+            else:  # sequence
+                fasta_oj[-1].DNA += line.strip()  # remove \n
 
         for gc in fasta_oj:
             c = Counter(gc.DNA)
-            gc.GC = (c['G'] + c['C']) / sum(c.values())
-            
-        fasta_oj.sort(key = lambda x: x.GC)
-    
-    with open('./answers/rosalind_GC_outFile.txt', 'w') as outFile:
-        print(fasta_oj[-1].ID, fasta_oj[-1].GC * 100, sep = '\n', file = outFile)
+            gc.GC = (c["G"] + c["C"]) / sum(c.values())
+
+        fasta_oj.sort(key=lambda x: x.GC)
+
+    with open("./answers/rosalind_GC_outFile.txt", "w") as outFile:
+        print(fasta_oj[-1].ID, fasta_oj[-1].GC * 100, sep="\n", file=outFile)
