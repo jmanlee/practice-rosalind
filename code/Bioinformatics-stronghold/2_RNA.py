@@ -1,4 +1,4 @@
-# rosalind_1_RNA
+# rosalind_2_RNA
 #
 # Transcribing DNA into RNA
 # https://rosalind.info/problems/rna/
