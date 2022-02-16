@@ -32,7 +32,7 @@ def get_uniprot_sequence(accession: str):
 
     text = requests.get(f"http://www.uniprot.org/uniprot/{accession}.fasta").text  # not text()
 
-    return "".join(line.strip() for line in text.splitlines()[1:])  # get().text is string. text[1:]로 하면 개별의 chr 가 나옴.
+    return "".join(line.strip() for line in text.splitlines()[1:])  # get().text is string. 
 
 
 if __name__ == "__main__":
