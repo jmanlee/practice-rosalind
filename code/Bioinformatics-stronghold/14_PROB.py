@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     with open("./datasets/rosalind_prob.txt") as inFile:
 
-      s = inFile.readline().strip()  # DNA string
+        s = inFile.readline().strip()  # DNA string
         A = list(map(float, inFile.readline().split()))  # gcContents
 
     with open("./answers/rosalind_prob_outFile.txt", "w") as outFile:
