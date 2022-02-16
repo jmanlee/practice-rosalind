@@ -10,7 +10,7 @@
 if __name__ == "__main__":
 
     with open("./datasets/rosalind_fibd.txt") as inFile:
-        n, m = map(int, inFile.readline().split())  # n = nth month, can live for m momths. if n = 6 m = 3
+        n, m = map(int, inFile.readline().split())  # n = nth month, can live for m momths. 
 
         newborn = [1]
         adult = [0] * (m - 1)  # [0, 0] mth adult rabbit die...
