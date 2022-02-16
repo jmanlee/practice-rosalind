@@ -49,7 +49,7 @@ if __name__ == "__main__":
         for accession in access_list:
             prot_seqeunce = get_uniprot_sequence(accession)
             # find N-gly motif
-            N_gly_dict[accession] = [m.start() + 1 for m in re.finditer(r"(?=[N][^P][ST][^P])", prot_seqeunce)]  # Q. match 되는게 없어도 되나? None?
+            N_gly_dict[accession] = [m.start() + 1 for m in re.finditer(r"(?=[N][^P][ST][^P])", prot_seqeunce)]  
 
         for accession, idx in N_gly_dict.items():
             if len(idx) > 0:
