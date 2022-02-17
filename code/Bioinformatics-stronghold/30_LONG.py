@@ -15,6 +15,7 @@
 # unique way 이기 때문에, 합쳐진 서열이 제일 큰 부분이 겹치는 경우만 찾아도 됨
 # 또는 모든 서열을 2개씩 비교하는 방법도 가능(greedy extension?)
 
+
 def parsing(file_path):
 
     with open(file_path) as inFile:
@@ -61,10 +62,11 @@ def assembly(seqs: list):
 
 if __name__ == "__main__":
 
-    file_path = './datasets/rosalind_long.txt'
+    file_path = "./datasets/rosalind_long.txt"
     headers, seqs = parsing(file_path)
 
     with open("./answers/rosalind_long_outFile.txt", "w") as outFile:
 
         result_seq = assembly(seqs)
-        print(f'{result_seq}', file=outFile)
+        print(f"{result_seq}", file=outFile)
+
